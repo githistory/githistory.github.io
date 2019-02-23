@@ -3,5 +3,4 @@ title: TechnoLog
 description: A Blog on Random Tech Stuff
 github:
   is_project_page: false
-google:
-  _analytics: UA-112160778-2
+google_analytics: UA-112160778-2

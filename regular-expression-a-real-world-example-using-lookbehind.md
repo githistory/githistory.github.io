@@ -1,5 +1,6 @@
 ## Regular Expression — A Real-World Example of Using Lookbehind
 
+![I Know Regular Expression](/images/i-know-regex.png)
 When it comes to regular expressions, it almost always brings more clarity to look at real-world examples than textbooks. And here’s one I’ve encountered.
 
 I was working on a project recently where I needed to grab the title text of a video from page source. By inspecting page source, we can be sure that if you look for
@@ -40,9 +41,9 @@ So in order to fix this, what we wanna do here essentially is to tell the progra
 /"title":"(.*?)(?<!\\)"/
 ```
 
-We first do a non-greedy any-character match. The `(?<!\\)"` is where the magic happens. The `(?<!a)b` matches a “b” which is not preceded by “a”. Here we matched a double quote character that’s not preceded by backslash. In regular expression, this is called a “lookbehind”, because once the regex engine reaches the double quote character it’ll look behind to make assertions on the previous character.
+We first do a non-greedy any-character match. The `(?<!\\)"` is where the magic happens. The `(?<!a)b` matches a `b` which is not preceded by `a`. Here we matched a double quote character that’s not preceded by backslash. In regular expression, this is called a “lookbehind”, because once the regex engine reaches the double quote character it’ll look behind to make assertions on the previous character.
 
-As you might have guessed there’s also “lookahead” assertion operation which looks at matches beyond the current standing point. So a(?=b) matches an “a” which is followed by a “b” and a(?!b) matches an “a” that’s not followed by a “b”.
+As you might have guessed there’s also “lookahead” assertion operation which looks at matches beyond the current standing point. So `a(?=b)` matches an `a` which is followed by a `b` and `a(?!b)` matches an `a` that’s not followed by a `b`.
 
 To sum it up
 

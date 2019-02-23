@@ -18,7 +18,7 @@ You might think, how difficult is that? Well, me too on my first try and here’
 /title":"([^"]+)"/
 ```
 
-The [^"]+ basically finds any number of non-double-quote characters up till the first double quote, which is the closing quote character for the value, and store that in a slot after the full regex match.
+The `[^"]+` basically finds any number of non-double-quote characters up till the first double quote, which is the closing quote character for the value, and store that in a slot after the full regex match.
 
 You can also do this by the way with a non-greedy match with . operator, such as
 

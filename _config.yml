@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 title: TechnoLog
 description: A Blog on Random Tech Stuff
+github:
+  is_project_page: false
